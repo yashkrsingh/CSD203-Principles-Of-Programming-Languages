@@ -1,0 +1,43 @@
+<!--
+Name		: Yash Kumar Singh
+Roll Number	: 1310110373
+Program Title	: Basic Form Validation L7
+-->
+
+<html>
+	<head>
+		<title>
+			Form Validation
+		</title>
+		<script language="javascript" type="text/javascript">
+			function check(){
+				if(document.forms[0].elements[0].value==document.forms[0].elements[1].value)
+					alert("First and last name can't be the same")
+
+				var x = document.forms[0].elements[2].value
+				if(x.search(/\d/) == -1){
+					alert("Password must have a digit")
+					return				
+				}
+				if(x.search(/[A-Z]/) == -1){
+					alert("Password must have a uppercase letter")
+					return
+				}
+				if(x.search(/[a-z]/) == -1){
+					alert("Password must have a lowercase letter")
+					return
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Form Validation</h1>
+		<hr>
+		<form onSubmit = "return check();">
+		First Name: <input type="text" name="firstname" required><br><br>
+		Last Name: <input type="text" name="lastname" required><br><br>
+		Password: <input type="password" name="password" minlength="10" required><br><br>
+		<input type="submit">
+		</form
+	</body>
+</html>
