@@ -1,4 +1,4 @@
-#Name		: Yash Kumar SIngh
+#Name		: Yash Kumar Singh
 #Roll Number	: 1310110373
 #Program Title	: Running linux commands PPL L9
 
